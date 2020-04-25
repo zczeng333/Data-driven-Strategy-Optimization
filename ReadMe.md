@@ -19,12 +19,12 @@ Environment
 
 package             | version       
 ------------------- | --------------
-**numpy**|1.18.2
-**matplotlib**|3.0.3
-**pandas**|0.25.3
-**tensorflow**|2.1.0
-**sklearn**|0.0
-**seaborn**|0.9.1
+*numpy*|1.18.2
+*matplotlib*|3.0.3
+*pandas*|0.25.3
+*tensorflow*|2.1.0
+*sklearn*|0.0
+*seaborn*|0.9.1
 
 
 Code File
@@ -34,26 +34,26 @@ Code File
 1. detect outliers via Isolation Forest and refill outliers via Just-in-time learning
 2. partition raw data based on dates
 
-Code file              |Description                       |Input data path                                                    |Output data path 
------------------------|----------------------------------|-------------------------------------------------------------------|-----------------
-outlier_utils.py       |detect and refill outliers        |match&classify/                                                    |outlier_processed/
-preprocessing_main.py  |main function for pre-processing  |None                                                               |None
-plot.py                |plot relevant figures             |outlier_processed/ (correlation heatmap) <br> merge.csv (raw data) |Figure/correlation(correlation heatmap)<br>Figure/Initial(raw data)
-segmentation_utils.py  |data partition                    |merge.csv                                                          |match&classify/
-set_path.py            |set path for module               |None                                                               |None
+Code file              |Description                       |Input data path                                            |Output data path 
+-----------------------|----------------------------------|-----------------------------------------------------------|-----------------
+outlier_utils.py       |detect and refill outliers        |match&classify/                                            |outlier_processed/
+preprocessing_main.py  |main function for pre-processing  |None                                                       |None
+plot.py                |plot relevant figures             |outlier_processed/ (correlation) <br> merge.csv (raw data) |Figure/correlation(correlation)<br>Figure/Initial(raw data)
+segmentation_utils.py  |data partition                    |merge.csv                                                  |match&classify/
+set_path.py            |set path for module               |None                                                       |None
 
 #### Feature Extraction module
 **Tasks:**
 1. extract linear principal components via PCA
 2. extract non-linear principal components via autoencoder
 
-Code file             |Description                                 |Input data path                                                   |Output data path 
-----------------------|--------------------------------------------|------------------------------------------------------------------|-----------------
-autoencoder_utils.py  |extract non-linear feature via autoencoder  |Autoencoder/train_data/                                           |AutoEncoder/data/（feature）<br> AutoEncoder/model/（model）
-feature_main.py       |main function for feature extraction        |None                                                              |None
-PCA_utils.py          |extract linear feature vai PCA              |outlier_processed/                                                |PCA/
-plot_utils.py         |plot relevanr figures                       |PCA/ (PCA feature) <br> AutoEncoder/Example (autoencoder feature) |Figure/PCA/ (PCA feature) <br> Figure/AutoEncoder/ (autoencoder feature)
-set_path.py           |set path for module
+Code file             |Description                           |Input data path                                                   |Output data path 
+----------------------|--------------------------------------|------------------------------------------------------------------|-----------------
+autoencoder_utils.py  |autoencoder feature extractor         |AutoEncoder/train_data/                                           |AutoEncoder/data/（feature）<br> AutoEncoder/model/（model）
+feature_main.py       |main function for feature extraction  |None                                                              |None
+PCA_utils.py          |PCA feature extractor                 |outlier_processed/                                                |PCA/
+plot_utils.py         |plot relevant figures                 |PCA/ (PCA feature) <br> AutoEncoder/Example (autoencoder feature) |Figure/PCA/ (PCA feature) <br> Figure/AutoEncoder/ (autoencoder feature)
+set_path.py           |set path for module                   |None                                                              |None
 
 #### Classification module
 **Tasks:**
