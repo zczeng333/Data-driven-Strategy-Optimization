@@ -1,0 +1,14 @@
+Path
+Fall/High/2018_10_30.csv
+Fall/Low/2018_10_3.csv
+Fall/Normal/2018_10_22.csv
+Spring/High/2018_3_10.csv
+Spring/High/2018_3_11.csv
+Spring/Low/2018_3_31.csv
+Spring/Normal/2018_3_21.csv
+Summer/High/2018_8_27.csv
+Summer/Low/2018_7_29.csv
+Summer/Normal/2018_7_11.csv
+Winter/High/2018_12_16.csv
+Winter/Low/2018_2_16.csv
+Winter/Normal/2018_1_20.csv

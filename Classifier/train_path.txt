@@ -1,0 +1,13 @@
+train_path
+Fall/High/2018_10_30.csv
+Fall/Low/2018_10_2.csv
+Fall/Normal/2018_10_21.csv
+Spring/High/2018_3_10.csv
+Spring/Low/2018_3_30.csv
+Spring/Normal/2018_3_21.csv
+Summer/High/2018_8_27.csv
+Summer/Low/2018_7_27.csv
+Summer/Normal/2018_7_9.csv
+Winter/High/2018_12_16.csv
+Winter/Low/2018_2_14.csv
+Winter/Normal/2018_1_20.csv
