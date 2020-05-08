@@ -27,7 +27,7 @@ package             | version
 *seaborn*|0.9.1
 
 
-Code File
+Code Files
 -------------
 #### Pre-processing module
 **Tasks:**
@@ -75,15 +75,16 @@ set_path.py            |set path for module              |None                  
 1. create markov decision process environment
 2. solve MDP and optimize operating strategy
 
-Code file          |Description                                       |Input data path  |Output data path 
--------------------|--------------------------------------------------|-----------------|-----------------
-LoadData.m         |load training data for RL agent                   |train_data/      |None
-myResetFunction.m  |define reset state for RL agent                   |None             |None
-myStepFunction.m   |compute observation and reward after each action  |None             |None
-Optimization.m     |Deep Q-Learning module for optimization           |None             |Strategy.xlsx
-Update.m           |acquire training data from data set               |None             |None
+Code file          |Description                                       |Input data path        |Output data path 
+-------------------|--------------------------------------------------|-----------------------|-----------------
+LoadData.m         |load training data for RL agent                   |train_data/            |None
+myResetFunction.m  |define reset state for RL agent                   |None                   |None
+myStepFunction.m   |compute observation and reward after each action  |None                   |None
+Optimization.m     |Deep Q-Learning module for optimization           |None                   |Strategy.xlsx
+Simulation.m       |Simulate strategies based on estimate model       |Original Strategy.csv  |Record.xlsx
+Update.m           |acquire training data from data set               |None                   |None
 
-Text File
+Text Files
 -------------
 
 Text File         |Description
@@ -94,3 +95,15 @@ path.txt          |path for partitioned data
 predict_path.txt  |path for predict data
 test_path.txt     |path for test data
 train_path.txt    |path for training data
+
+
+Figures
+-------------
+
+Text File              |Description
+-----------------------|-----------
+Episode Manger.jpg     |RL training UI
+Training Process.jpg   |RL training process
+Comparison.fig         |Power generation comparison between different strategies
+Optimized Strategy.fig |Optimized Strategy of a certain day
+Original Strategy.fig  |Original Strategy of a certain day
