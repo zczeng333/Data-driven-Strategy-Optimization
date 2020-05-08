@@ -1,0 +1,2 @@
+csv文件按照Weather, Light, Absorption, Storage, Generation进行命名
+各csv文件中包括对应工况下的所有时刻的发电功率(G)，储热液位（L）
